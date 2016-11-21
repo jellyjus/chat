@@ -1,0 +1,24 @@
+#online_block {
+    background-color: white;
+    border: 1px solid #dadada;
+    width: 250px;
+    height: 250px;
+    float: left;
+    overflow: auto;
+}
+
+#online_block h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#online_block div {
+    margin: 10px;
+    min-height: 42px;
+}
+
+#online_block img {
+    float: left;
+    max-width: 40px;
+    max-height: 100%;
+}

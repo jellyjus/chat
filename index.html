@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Чатик</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/online_block.css">
+    <link rel="stylesheet" href="styles/draw_window.css">
+    <link rel="icon" href="http://chatik.cloudno.de/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.socket.io/socket.io-1.4.4.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://www.youtube.com/iframe_api"></script>
+    <script src="date.js"></script>
+    <script src="main.js" defer></script>
+    <script src="styles/main.js" defer></script>
+    <script src="draw.js" defer></script>
+    <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/36607f3de8c76d0c54a32211a8042407_0.js" async></script>
+</head>
+<body>
+<div id="container">
+    <div id="chat_window">
+        <a href="#" data-tooltip="Порисовать" id="next">
+            <img src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911579directionalright.png">
+        </a>
+        <div id="first">
+            <form name="reg">
+                <input type="text" id="login" placeholder="Логин" autocomplete="off">
+                <input type="password" id="pass" placeholder="Пароль" autocomplete="off">
+                <a href="#" class="button8">Войти</a>
+            </form>
+
+            <div id="profile">
+                <div id="ava">
+                    <img>
+                    <div><input type="text" placeholder="Ссылка"></div>
+                </div>
+                <div id="nick"></div>
+                <a href="#" id="logout_but" class="button15">Выйти</a><br><br><br>
+                <a href="#" class="button15">Создать группу</a>
+            </div>
+
+        </div>
+        <div id="log"></div>
+        <div id="online_block">
+            <h4>Online:</h4>
+        </div>
+        <div id="chat">
+            <div id="messages"></div>
+            <img src="https://pp.vk.me/c614930/v614930949/1ba87/WpKvM-qtOhg.jpg" id="add_img">
+            <img src="http://www.jwaoil.com/wp-content/uploads/2015/03/1426743836_youtube-48.png" id="add_video">
+            <input type="text" id="message" placeholder="Сообщение" autocomplete="off">
+        </div>
+    </div>
+    <div id="draw_window">
+        <div id="draw_content">
+            <div id="panel">
+                <img src="http://www.iconpng.com/png/systemblack/trash-full.png" id="draw_clear">
+                <!--<img src="http://www.iconsearch.ru/uploads/icons/ecqlipse2/128x128/rtm.png" id="draw_color">-->
+                <input id="draw_color" type="color">
+            </div>
+            <canvas id="drawing"></canvas>
+        </div>
+        <a href="#" id="back">
+            <img src="http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png">
+        </a>
+    </div>
+</div>
+</body>
+</html>

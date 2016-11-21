@@ -1,0 +1,41 @@
+#draw_window {
+    float: left;
+    position: relative;
+}
+
+#draw_content {
+    margin: 25px 50px 0 0;
+    float: right;
+}
+
+#drawing {
+    background-color: white;
+    cursor: default;
+    border: 1px solid #dadada;
+}
+
+#panel {
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#panel img {
+    float: left;
+    height: 100%;
+    margin-left: 15px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#panel img:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#draw_color {
+    float: left;
+    margin: 5px 0 0 15px ;
+    height: 30px;
+    width: 30px;
+}
